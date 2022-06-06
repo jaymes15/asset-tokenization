@@ -6,6 +6,7 @@ contract MyToken is ERC20{
 
     constructor(uint256 initialSupply) ERC20("SOLAR", "SOLAR") public {
         _mint(msg.sender, initialSupply);
+        _setupDecimals(0);
     }
 
 }
